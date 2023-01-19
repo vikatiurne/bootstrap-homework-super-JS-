@@ -1,0 +1,99 @@
+:root {
+  --color1: #eebb12;
+  --color2: #070707;
+  --color3: #111;
+  --color4: white;
+}
+
+section {
+  padding: 100px 0;
+}
+p {
+  font-size: 18px;
+}
+
+/* Color */
+.color_black {
+  background-color: var(--color2);
+}
+.color_dark-gray {
+  background-color: var(--color3);
+}
+
+/* Header */
+header {
+  padding: 145px 0;
+  background-image: url(../img/pattern.png);
+}
+.my-btn {
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+}
+/* Author */
+.author {
+  padding-bottom: 0;
+}
+/* About course */
+.circle {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--color1);
+}
+.circle i {
+  font-size: 30px;
+}
+.line {
+  margin: 0 auto;
+  display: block;
+  max-width: 100px;
+  height: 3px;
+  background-color: var(--color1);
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*  */
+.accordion{
+    --bs-accordion-active-bg: var(--color1);
+}
+.accordion-button:focus {
+    box-shadow: var(--color2);
+}
+.accordion-button:not(.collapsed) {
+    color: var(--color2);
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+/* FAQ */
+.faq a,
+.mail{
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--color1);
+}
+/* Footer */
+footer a,
+.mail {
+    font-size: 18px;
+  }
